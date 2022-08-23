@@ -66,5 +66,4 @@ public class Contact {
 		return "Contact [firstName=" + firstName + ", lastName=" + lastName + ", adddress=" + adddress + ", city="
 				+ city + ", state=" + state + ", zipCode=" + zipCode + ", mobileNumber=" + mobileNumber + ", email="
 				+ email + "]";
-	}
-}
+	}}
