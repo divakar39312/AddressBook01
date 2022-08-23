@@ -8,10 +8,7 @@ public class AddressBookMain {
 HashMap<String,AddressBook> addressBookHashMap = new HashMap<>();
 	
 	public static void main(String[] args) {
-		/**
-		 * creating object of AddressBook class calling addContact method and displayContact
-		 */
-		AddressBook addressBook = new AddressBook();
+				AddressBook addressBook = new AddressBook();
 		int choice;
 
 		while(true) {
@@ -20,7 +17,7 @@ HashMap<String,AddressBook> addressBookHashMap = new HashMap<>();
 			System.out.println("Please Choose an Option");
 			System.out.println("1. ADD CONTACT \n2. DISPLAY CONTACT \n3. EDIT CONTACT \n4. DELETE CONTACT \n5. EDIT");
 			choice = sc.nextInt();
-			// performing task according to the choices entered by the User
+			// performing task according to  user
 			switch (choice) {
 			case 1:
 				addressBook.addContact();
@@ -38,8 +35,8 @@ HashMap<String,AddressBook> addressBookHashMap = new HashMap<>();
 				System.exit(0);
 				break;
 			default:
-				System.out.println("Wrong choice entered !!!!!!");
-				System.out.println("Kindly choose the correct Option");
+				
+				System.out.println("invalid option");
 				break;
 			}
 		}

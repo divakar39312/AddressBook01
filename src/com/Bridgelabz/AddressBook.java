@@ -38,9 +38,7 @@ Scanner sc = new Scanner(System.in);
 	}
 	
 	public void displayContact() {
-		/**
-		 * showing data inputed by user in addContact method
-		 */	
+			
 		System.out.println("\n    Contact    ");
 		System.out.println("----------------------");
 		// displaying the data in the ArrayList through index value
@@ -52,7 +50,7 @@ Scanner sc = new Scanner(System.in);
 	}
 	
 	public void editContact() {
-		// editing the existing contact using their First Name
+	
 		System.out.println("Enter the First Name of Contact to Edit");
 		String firstName = sc.next();
 		boolean isAvailable = false ;
@@ -97,11 +95,11 @@ Scanner sc = new Scanner(System.in);
 					contact.setEmail(sc.next());
 					break;
 				}
-				System.out.println("Updated Sucessfully ...");
+				System.out.println("Updated Sucessfully");
 			}
 		}
 		if(isAvailable == false){
-			System.out.println("Contact is not Available \nTry again");
+			System.out.println("Contact not Available");
 		}
 	}
 	
@@ -120,7 +118,7 @@ Scanner sc = new Scanner(System.in);
 			}
 		}
 		if (isAvailable == false) {
-			System.out.println("Sorry ! Data not found");
+			System.out.println("Not available");
 		}
 	}
 }
